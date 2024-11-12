@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
+# Ensure consistent line endings for text files
 * text=auto
+
+# For specific files, force LF line endings
+*.js text eol=lf
+*.json text eol=lf
+
+# For Windows-specific files, enforce CRLF
+*.bat text eol=crlf
